@@ -13,3 +13,9 @@ if n = 200 output is 1600
 c) Bunny ears is dependent on the value of bunnies. As it is decremented by 1 each time, it needs to be called n times, making this O(n).
 
 ## Exercise II
+
+I would implement a binary search technique by calculating which floor is the middle floor and dropping the egg from that height. If the egg breaks, I know that I can ignore the upper floors because it will definitely break at higher points. If it does not break, I can ignore the bottom floors because they will not break there either.
+
+I would reconcentrate my efforts after the initial fall to the half of the building that is relevant, calculating a new mid point and repeating the process until I find the floor that divides the non-breaking and breaking point.
+
+Runtime complexity of this is O(log n) because as we increase our input, it grows at a slightly slower rate since we're also cutting the data we're working with in half each time.
